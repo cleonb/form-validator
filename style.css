@@ -13,79 +13,99 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background:url(background.jpg);
+  background: url(background.jpg);
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.container{
-  width:450px;
-  height:550px;
-  background: #000000a8;
-  color: white;
+.container {
+  width: 480px;
+  height: 600px;
+  background:rgba(0, 0, 0, 0.424);
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  border-radius: 15px;
-  box-shadow: 0 5px 30px 10px black;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.4);
 }
 
-form{
+/* Form */
+form {
   width: 90%;
 }
 
-input{
-  margin-bottom: 10px;
+.form-group {
+  height: 65px;
+}
+
+label {
+  position: relative;
+  bottom: 3px;
+}
+
+input {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height:25px;
-  padding: 10px;
+  height: 34px;
+  padding: 5px;
+  margin-bottom: 10px;
   border: 1px solid black;
   border-radius: 5px;
   outline: none;
+  box-sizing: border-box;
   transition: all 0.3s;
 }
 
-input:valid{
-  border: 2px solid green;
+input:valid {
+  border: 1px solid green;
 }
 
-input:invalid{
-  border: 2px solid red;
+input:invalid {
+  border: 1px solid red;
 }
 
- button{
-   cursor: pointer;
-   width: 100px;
-   padding: 5px;
-   margin-top: 10px;
-   margin-left: 150px;
-   border-radius: 15px;
-   border: none;
-   outline: none;
-   background: #365d77;
-   color: white;
-   font-family: Patrick Hand, sans-serif;
-   font-size: 20px;
-   box-shadow: 0 3px 10px 3px black; 
- }
+button {
+  cursor: pointer;
+  color: white;
+  background: rgb(46, 46, 46);
+  border: none;
+  border-radius: 15px;
+  height: 50px;
+  width: 60%;
+  font-family: Patrick Hand, sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  margin-left: 80px;
+  box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.4);
+}
 
+button:hover {
+  filter: brightness(80%);
+}
 
- button:hover{
-   filter: brightness(70%);
- }
+button:focus {
+  outline: none;
+}
 
- button:active{
+button:active{
+  filter: brightness(80%);
   transform: translateY(3px);
 }
 
-.message-container  h3{
+.message-container {
+  border: transparent;
+  width: 100%;
+  margin-top: 3px;
   display: flex;
+  justify-content: center;
+  color:#fff;
+}
+
+.h3{
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
