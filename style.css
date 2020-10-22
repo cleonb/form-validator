@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Patrick Hand, sans-serif;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:url(background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container{
+  width:450px;
+  height:550px;
+  background: #000000a8;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 0 5px 30px 10px black;
+}
+
+form{
+  width: 90%;
+}
+
+input{
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:25px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+input:valid{
+  border: 2px solid green;
+}
+
+input:invalid{
+  border: 2px solid red;
+}
+
+ button{
+   cursor: pointer;
+   width: 100px;
+   padding: 5px;
+   margin-top: 10px;
+   margin-left: 150px;
+   border-radius: 15px;
+   border: none;
+   outline: none;
+   background: #365d77;
+   color: white;
+   font-family: Patrick Hand, sans-serif;
+   font-size: 20px;
+   box-shadow: 0 3px 10px 3px black; 
+ }
+
+
+ button:hover{
+   filter: brightness(70%);
+ }
+
+ button:active{
+  transform: translateY(3px);
+}
+
+.message-container  h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
